@@ -1,42 +1,42 @@
 import React from 'react'
 import logo from './logo.svg'
+import catsAndTopics from './data/cats-and-topics'
 import './App.css'
+
+export interface Topic {
+  name: string
+  path: string
+}
+
+export interface Cat {
+  title: string
+  topics: Topic[]
+}
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>1-on-1 ideas &amp; scripts</h1>
+        <div>
+          <p>It's nearly time for that 1-on-1! Let's plan it out.</p>
+        </div>
         <img src={logo} className="App-logo" alt="logo" />
         <p>Title, tiny intro text, and an image (talking heads?); then the categories</p>
-        <div>
-          <ul>
-            <li>Inside each category: hooks/questions/triggers/seeds?</li>
-            <li>By default: show all categories (headers) and the topics under that...</li>
-            <li>
-              Each in a component that has a ...shrunk mode? what's our flow? Nothing fancy for scroll, etc.; but
-              content we're not using can hide.
-            </li>
-            <li>
-              User flow: scan cats &amp; topics. Pick a topic, click it. Go from Scan mode to Read mode: other cats show
-              just the cat name, small. SELECTED cat is a heading with selected topic open and other topics small but
-              visible Select one topic at a time (it close the other open one when you do)
-            </li>
-            <li>Click any other cat to go back to Scan mode (all cats + topics visible, no topic open</li>
-            <li>Data structure: cat, name, topics, topic, name, MD content?</li>
-          </ul>
-        </div>
-        <p>Next up</p>
-        <div>
-          <ol>
-            <li>Write out a few sample categories and triggers</li>
-            <li>Basic HTML layout (no state yet, etc)</li>
-            <li>Try loading data from json and/or MD?</li>
-          </ol>
-        </div>
         <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
+          Laern Raect
         </a>
       </header>
+      {catsAndTopics.map((cat) => (
+        <section>
+          <h2>{cat.title}</h2>
+          <ul>
+            {cat.topics.map((topic) => (
+              <li>{topic.name}</li>
+            ))}
+          </ul>
+        </section>
+      ))}
     </div>
   )
 }
