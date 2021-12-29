@@ -15,15 +15,15 @@ We could indeed. Let's put a quote here:
 
 Great.
 
-* Here's an
-* unordered
-* list with a [link in it](https://robwhelan.com "Link to, uh.")
+- Here's an
+- unordered
+- list with a [link in it](https://robwhelan.com 'Link to, uh.')
 
 ## What about images?
 
 These will take more work to style well, I guess, but let's see...
 
-![Image alt text](logo512.png "Image title text")
+![Image alt text](logo512.png 'Image title text')
 
 _Nice?_ **Nice.**
 

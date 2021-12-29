@@ -21,11 +21,12 @@
     "@types/node": "^16.7.13",
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
-    "react-scripts": "5.0.0"
+    "react-scripts": "5.0.0",
+    "ts-node": "^10.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "generate": "ts-node ./scripts/generateCatsAndTopics.ts",
+    "generate": "ts-node ./src/scripts/generateContentJs.ts",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

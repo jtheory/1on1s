@@ -15,8 +15,9 @@ Another paragraph
 
 We could indeed. Let's put a quote here:
 
-> Multiline quote, even
-> Splendid, yes
+> Multiline quote, even?  
+Yes BUT only  
+if we have two space at the end of lines
 
 ## And one more h2?
 
