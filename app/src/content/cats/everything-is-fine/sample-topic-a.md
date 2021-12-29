@@ -8,8 +8,9 @@ Another paragraph
 
 We could indeed. Let's put a quote here:
 
-> Multiline quote, even
-> Splendid, yes
+> Multiline quote, even!  
+> Though only if we put two spaces  
+> at the end of each line...
 
 ## And one more h2?
 

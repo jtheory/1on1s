@@ -1,7 +1,7 @@
 import React from 'react'
 import Markdown from 'markdown-to-jsx'
 import logo from './logo.svg'
-import catsAndTopics from './data/cats-and-topics'
+import contentJson from './__generated__/content.json'
 import './App.css'
 
 export interface Topic {
@@ -14,6 +14,8 @@ export interface Cat {
   title: string
   topics: Topic[]
 }
+
+const catsData = contentJson as Cat[]
 
 function App() {
   return (
@@ -29,7 +31,7 @@ function App() {
           Laern Raect
         </a>
       </header>
-      {catsAndTopics.map((cat) => (
+      {catsData.map((cat) => (
         <section key={cat.title}>
           <h2>{cat.title}</h2>
           <ul>
@@ -40,10 +42,14 @@ function App() {
         </section>
       ))}
       <section>
-        <h2>try pulling in md content</h2>
-        <p>unsure what we can do at build time (convert to html / jsx); likely better than on the fly!</p>
-        <p>may try writing a script to do it build time, then?</p>
-        <Markdown>{catsAndTopics[0].topics[0].md}</Markdown>
+        <p>MD to JSON to page is working! cool. Next: styling and work on UI; refactoring</p>
+        <p>First: showing all content expanded, and set up expand/hide next?</p>
+        <p>
+          ALSO don't forget URLs: when we DO have expanded topics, the cat + topic should go into a URL anchor, and (when loading the page)
+          we can auto-expand the right cat/topic
+        </p>
+        <h3>Here's some markdown content from the first topic:</h3>
+        <Markdown>{catsData[0].topics[0].md}</Markdown>
       </section>
     </div>
   )
