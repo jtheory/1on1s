@@ -1,4 +1,5 @@
 import React from 'react'
+import Markdown from 'markdown-to-jsx'
 import logo from './logo.svg'
 import catsAndTopics from './data/cats-and-topics'
 import './App.css'
@@ -6,6 +7,7 @@ import './App.css'
 export interface Topic {
   name: string
   path: string
+  md: string
 }
 
 export interface Cat {
@@ -28,15 +30,21 @@ function App() {
         </a>
       </header>
       {catsAndTopics.map((cat) => (
-        <section>
+        <section key={cat.title}>
           <h2>{cat.title}</h2>
           <ul>
             {cat.topics.map((topic) => (
-              <li>{topic.name}</li>
+              <li key={topic.name}>{topic.name}</li>
             ))}
           </ul>
         </section>
       ))}
+      <section>
+        <h2>try pulling in md content</h2>
+        <p>unsure what we can do at build time (convert to html / jsx); likely better than on the fly!</p>
+        <p>may try writing a script to do it build time, then?</p>
+        <Markdown>{catsAndTopics[0].topics[0].md}</Markdown>
+      </section>
     </div>
   )
 }
