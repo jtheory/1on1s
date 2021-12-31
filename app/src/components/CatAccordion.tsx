@@ -1,13 +1,24 @@
-import React, { useEffect, useState } from 'react'
+import React, { CSSProperties, useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { Cat } from '../App'
 import TopicItem from './TopicItem'
-// import './CatAccordion.css'
+import { Link } from 'react-router-dom'
 
 interface CatAccordionProps {
   data: Cat[]
   selectedCat?: string
   selectedTopic?: string
+}
+
+const CatStyle: CSSProperties = {
+  maxHeight: '5rem', // show only the title
+  overflow: 'hidden',
+  transition: 'max-height 3s ease-in-out',
+}
+
+const CatStyleSelected = {
+  ...CatStyle,
+  maxHeight: '1000rem', // show all
 }
 
 const CatAccordion: React.VFC<CatAccordionProps> = (props) => {
@@ -22,8 +33,7 @@ const CatAccordion: React.VFC<CatAccordionProps> = (props) => {
   const [selectedPath, setSelectedPath] = useState(location.pathname)
 
   useEffect(() => {
-    // do we even need useEffect and useState?
-    // eh, animate first
+    // TODO do we even need useEffect and useState? I think useLocation = it's re-render when that changes
     setSelectedPath(location.pathname)
   }, [location])
 
@@ -31,16 +41,17 @@ const CatAccordion: React.VFC<CatAccordionProps> = (props) => {
     <section className="CatAccordion">
       {props.data.map((cat) => {
         const isCatActive = selectedPath === '/' || selectedPath.startsWith(`/${cat.slug}/`)
+        const catStyle = isCatActive ? CatStyleSelected : CatStyle
         return (
-          <section key={cat.slug}>
-            <h2>{cat.title}</h2>
-            {isCatActive && (
-              <ul>
-                {cat.topics.map((topic) => (
-                  <TopicItem data={topic} selectedPath={selectedPath} />
-                ))}
-              </ul>
-            )}
+          <section key={cat.slug} style={catStyle}>
+            <h2>
+              <Link to={'/'}>{cat.title}</Link>
+            </h2>
+            <ul>
+              {cat.topics.map((topic) => (
+                <TopicItem key={topic.path} data={topic} selectedPath={selectedPath} />
+              ))}
+            </ul>
           </section>
         )
       })}

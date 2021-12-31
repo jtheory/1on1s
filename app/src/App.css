@@ -1,6 +1,5 @@
 .App {
-  background-color: #282c34;
-  color: white;
+  color: #222;
 }
 
 .App-logo {
@@ -15,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   /* min-height: 80vh; */
   padding: 6vmin 1rem;
   display: flex;
@@ -24,7 +23,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {

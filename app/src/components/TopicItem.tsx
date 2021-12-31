@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { CSSProperties } from 'react'
 import Markdown from 'markdown-to-jsx'
 import { Topic } from '../App'
 import { Link } from 'react-router-dom'
@@ -13,21 +13,31 @@ interface TopicItemProps {
   selectedPath: string
 }
 
+const TopicStyle: CSSProperties = {
+  maxHeight: '4rem', // show only the title
+  overflow: 'hidden',
+  transition: 'max-height 3s ease-in-out',
+}
+
+const TopicStyleSelected = {
+  ...TopicStyle,
+  maxHeight: '1000rem', // show all
+}
+
 const TopicItem: React.VFC<TopicItemProps> = (props) => {
   const isSelected = props.data.path === props.selectedPath
+  const topicStyle = isSelected ? TopicStyleSelected : TopicStyle
   return (
-    <li key={props.data.path}>
+    <li style={topicStyle}>
       <h2>
         <Link to={props.data.path}>{props.data.name}</Link>
       </h2>
-      {isSelected && (
-        <div>
-          <a href={`${editUrlBase}${props.data.path}.md`} aria-label="Edit: opens content page on github">
-            <FontAwesomeIcon icon={faPencilAlt} />
-          </a>
-          <Markdown>{props.data.md}</Markdown>
-        </div>
-      )}
+      <div>
+        <a href={`${editUrlBase}${props.data.path}.md`} aria-label="Edit: opens content page on github">
+          <FontAwesomeIcon icon={faPencilAlt} />
+        </a>
+        <Markdown>{props.data.md}</Markdown>
+      </div>
     </li>
   )
 }
