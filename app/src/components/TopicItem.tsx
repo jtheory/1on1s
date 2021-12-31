@@ -2,7 +2,9 @@ import React from 'react'
 import Markdown from 'markdown-to-jsx'
 import { Topic } from '../App'
 import { Link } from 'react-router-dom'
-// import './App.css'
+// import './TopicItem.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPencilAlt } from '@fortawesome/free-solid-svg-icons'
 
 const editUrlBase = 'https://github.com/jtheory/1on1s/tree/main/app/src/content/cats'
 
@@ -21,7 +23,7 @@ const TopicItem: React.VFC<TopicItemProps> = (props) => {
       {isSelected && (
         <div>
           <a href={`${editUrlBase}${props.data.path}.md`} aria-label="Edit: opens content page on github">
-            edit
+            <FontAwesomeIcon icon={faPencilAlt} />
           </a>
           <Markdown>{props.data.md}</Markdown>
         </div>
