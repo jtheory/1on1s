@@ -33,6 +33,7 @@
     "start": "react-scripts start",
     "generate": "ts-node ./src/scripts/generateContentJs.ts",
     "build": "react-scripts build",
+    "generateAndBuild": "yarn generate && yarn build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
