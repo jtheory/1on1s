@@ -7,8 +7,7 @@ const catDir = '../content/cats'
 const targetFile = '../__generated__/content.json'
 
 /**
- * Load cat-titles-and-slugs plus MD content into one big JS
- * (TODO: JSON? but multiline strings may get weird)
+ * Load cat-titles-and-slugs plus MD content (split out h1) into one big JSON
  */
 const run = async () => {
   const catsPath = join(__dirname, catDir)
@@ -21,14 +20,12 @@ const run = async () => {
   const fullData = catTitlesAndSlugs.map((c) => {
     const topicFilenames = readdirSync(join(catsPath, c.slug))
     const topics = topicFilenames.map((topicFilename) => loadTopic(catsPath, c.slug, topicFilename))
-    const cat: Cat = { title: c.title, topics }
+    const cat: Cat = { title: c.title, slug: c.slug, topics }
     return cat
   })
 
-  console.log(`okay cat ${JSON.stringify(fullData, null, 2)}`)
-
-  // write it out
-  writeFileSync(join(__dirname, targetFile), JSON.stringify(fullData), 'utf-8')
+  // write it out (pretty; it'll get minified later)
+  writeFileSync(join(__dirname, targetFile), JSON.stringify(fullData, null, 2), 'utf-8')
 
   console.log(`Wrote new data file to ${targetFile}`)
   process.exit()
@@ -37,24 +34,32 @@ const run = async () => {
 const loadTopic = (catsPath: string, catSlug: string, topicFilename: string): Topic => {
   if (!topicFilename.endsWith('.md')) throw new Error(`Topic file doesn't end in .md: ${topicFilename}`)
 
+  const topicSlug = topicFilename.replace(/\.md$/i, '')
   const mdContent = readFileSync(join(catsPath, catSlug, topicFilename), 'utf-8')
   const topicPath = join(catSlug, topicFilename)
 
-  const maybeH1 = tryExtractMdH1(mdContent)
-  if (!maybeH1) throw new Error(`No H1 found in ${topicPath}`)
-  const h1 = maybeH1
+  const maybeSplitMd = trySplitOutMdH1(mdContent)
+  if (!maybeSplitMd) throw new Error(`No H1 found in ${topicPath}`)
+  const splitMd = maybeSplitMd
 
   return {
-    path: topicPath,
-    name: h1,
-    md: mdContent,
+    name: splitMd.h1,
+    path: `/${catSlug}/${topicSlug}`,
+    md: splitMd.content,
   }
 }
 
-const tryExtractMdH1 = (md: string) => {
-  const matched = md.match(/^# (.*)$/m)
-  const captureH1 = matched?.at(1)
-  return captureH1
+const trySplitOutMdH1 = (mdDoc: string) => {
+  const matched = mdDoc.match(/^# (.*)$/m)
+  if (!matched) return null
+
+  const h1FullLine = matched[0]
+  const h1Text = matched[1]
+
+  return {
+    h1: h1Text,
+    content: mdDoc.replace(h1FullLine, '').trimStart(),
+  }
 }
 
 const enforceCatDirsFound = (expectedSlugs: string[], foundSlugs: string[]) => {

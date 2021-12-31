@@ -14,6 +14,7 @@ export interface Topic {
 
 export interface Cat {
   title: string
+  slug: string
   topics: Topic[]
 }
 
@@ -28,10 +29,10 @@ function App() {
           <p>It's nearly time for that 1-on-1! Let's plan it out.</p>
         </div>
         <img src={logo} className="App-logo" alt="logo" />
-        <img src={forest} className="App-logot" alt="logo" />
-        <p>Title, tiny intro text, and an image (talking heads?); then the categories</p>
+        <img src={forest} alt="forest" />
+        <p>Title, tiny intro text, and an image (from blush?); then the categories</p>
         <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Laern Raect
+          Laern You This Tasty Raect
         </a>
       </header>
       <BrowserRouter>
