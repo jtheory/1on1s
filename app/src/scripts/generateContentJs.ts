@@ -19,12 +19,14 @@ const run = async () => {
 
   const fullData = catTitlesAndSlugs.map((c) => {
     const topicFilenames = readdirSync(join(catsPath, c.slug))
+    if (topicFilenames.length < 1) throw new Error(`No topics in category ${c.slug}`)
+
     const topics = topicFilenames.map((topicFilename) => loadTopic(catsPath, c.slug, topicFilename))
     const cat: Cat = { title: c.title, slug: c.slug, topics }
     return cat
   })
 
-  // write it out (pretty; it'll get minified later)
+  // write it out (pretty! it'll get minified later)
   writeFileSync(join(__dirname, targetFile), JSON.stringify(fullData, null, 2), 'utf-8')
 
   console.log(`Wrote new data file to ${targetFile}`)

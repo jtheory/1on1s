@@ -16,7 +16,7 @@ interface TopicItemProps {
 const TopicStyle: CSSProperties = {
   maxHeight: '4rem', // show only the title
   overflow: 'hidden',
-  transition: 'max-height 3s ease-in-out',
+  transition: 'max-height 1s ease-in-out',
 }
 
 const TopicStyleSelected = {
@@ -27,10 +27,11 @@ const TopicStyleSelected = {
 const TopicItem: React.VFC<TopicItemProps> = (props) => {
   const isSelected = props.data.path === props.selectedPath
   const topicStyle = isSelected ? TopicStyleSelected : TopicStyle
+  const nameLink = isSelected ? '/' : props.data.path
   return (
     <li style={topicStyle}>
       <h2>
-        <Link to={props.data.path}>{props.data.name}</Link>
+        <Link to={nameLink}>{props.data.name}</Link>
       </h2>
       <div>
         <a href={`${editUrlBase}${props.data.path}.md`} aria-label="Edit: opens content page on github">

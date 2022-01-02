@@ -1,14 +1,22 @@
 /**
- * `yarn generate` merges this with the md content to put everything into a big JS file
+ * `yarn generate` merges this with the md content to put everything into one big JSON file
  */
 const catTitlesAndSlugs = [
   {
-    title: 'Everything is fine (really)',
-    slug: 'everything-is-fine',
+    title: 'Nothing from me. Skip this one?',
+    slug: 'nothing-from-me',
   },
   {
-    title: "Problems I don't know how to talk about",
-    slug: 'problems-i-dont-know-how',
+    title: 'Everything is fine (really)',
+    slug: 'fine-really',
+  },
+  {
+    title: 'This is fine (on fire)',
+    slug: 'fine-on-fire',
+  },
+  {
+    title: 'Something has to change',
+    slug: 'something-has-to-change',
   },
 ]
 

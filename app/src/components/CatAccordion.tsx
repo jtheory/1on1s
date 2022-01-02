@@ -13,11 +13,13 @@ interface CatAccordionProps {
 const CatStyle: CSSProperties = {
   maxHeight: '5rem', // show only the title
   overflow: 'hidden',
-  transition: 'max-height 3s ease-in-out',
+  opacity: '0.5',
+  transition: 'max-height 1s ease-in-out',
 }
 
 const CatStyleSelected = {
   ...CatStyle,
+  opacity: '1',
   maxHeight: '1000rem', // show all
 }
 
@@ -33,8 +35,10 @@ const CatAccordion: React.VFC<CatAccordionProps> = (props) => {
   const [selectedPath, setSelectedPath] = useState(location.pathname)
 
   useEffect(() => {
-    // TODO do we even need useEffect and useState? I think useLocation = it's re-render when that changes
+    // TODO do we even need useEffect and useState? I think useLocation = it'll re-render when that changes?
+    // ALT: setSelectedPath on click, don't wait for nav to trigger the change
     setSelectedPath(location.pathname)
+    console.log(`location changed useEffect ${new Date()}`)
   }, [location])
 
   return (

@@ -20,6 +20,29 @@ body {
   margin: 0;
 } */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+blockquote {
+  position: relative;
+  margin: 0 auto;
+  border-left: 1em solid #c76c0c;
+  border-right: 2px solid #c76c0c;
+}
+
+blockquote:before {
+  position: absolute;
+  content: open-quote;
+  font-size: 4em;
+  margin-left: -0.6em;
+  margin-top: -0.4em;
+}
+blockquote:after {
+  position: absolute;
+  content: close-quote;
+  font-size: 4em;
+  bottom: 0;
+  right: 0;
+  margin-right: -0.6em;
+  margin-bottom: -0.8em;
+}
+blockquote p {
+  display: inline;
 }
