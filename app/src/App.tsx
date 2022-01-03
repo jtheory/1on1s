@@ -1,4 +1,4 @@
-import React, { CSSProperties } from 'react'
+import React from 'react'
 import logo from './logo.svg'
 // import forest from './forest.svg'
 import contentJson from './__generated__/content.json'
