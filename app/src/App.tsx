@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './logo.svg'
+// import logo from './logo.svg'
 // import forest from './forest.svg'
 import contentJson from './__generated__/content.json'
 import { BrowserRouter } from 'react-router-dom'
@@ -32,21 +32,16 @@ const catsData = contentJson as Cat[]
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>1-on-1 ideas &amp; scripts</h1>
-        <div>
-          <p>It's nearly time for that 1-on-1! Let's plan it out.</p>
-        </div>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Tiny intro text, and an image (from blush?); then the categories</p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Laern You This Tasty Raect
-        </a>
+      <header>
+        <h1>Tech 1-on-1 ideas &amp; scripts</h1>
+        <p>Nearly time for that 1-on-1! Let's plan it out.</p>
       </header>
-      <BrowserRouter>
-        <h2>Cat accordion</h2>
-        <CatAccordion data={catsData} />
-      </BrowserRouter>
+      <div className='content'>
+        <p>Pick a category to explore:</p>
+        <BrowserRouter>
+          <CatAccordion data={catsData} />
+        </BrowserRouter>
+      </div>
     </div>
   )
 }

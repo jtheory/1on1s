@@ -42,24 +42,24 @@ const CatAccordion: React.VFC<CatAccordionProps> = (props) => {
   }, [location])
 
   return (
-    <section className="CatAccordion">
+    <div className="CatAccordion">
       {props.data.map((cat) => {
         const isCatActive = selectedPath === '/' || selectedPath.startsWith(`/${cat.slug}/`)
         const catStyle = isCatActive ? CatStyleSelected : CatStyle
         return (
           <section key={cat.slug} style={catStyle}>
-            <h2>
+            <h1>
               <Link to={'/'}>{cat.title}</Link>
-            </h2>
-            <ul>
+            </h1>
+            <div>
               {cat.topics.map((topic) => (
                 <TopicItem key={topic.path} data={topic} selectedPath={selectedPath} />
               ))}
-            </ul>
+            </div>
           </section>
         )
       })}
-    </section>
+    </div>
   )
 }
 

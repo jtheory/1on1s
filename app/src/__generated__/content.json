@@ -1,27 +1,49 @@
 [
   {
+    "title": "Nothing from me. Skip this one?",
+    "slug": "nothing-from-me",
+    "topics": [
+      {
+        "name": "Don't ever skip, really",
+        "path": "/nothing-from-me/dont-ever-skip",
+        "md": "A 10-minute call might be all you need; but really **don't ever skip** 1-on-1s, especially when you're working remotely.\n\nIt's fairly standard to start out with weekly 1-on-1s (of maybe 45 minutes), then maybe switch to every other week if the team & work is stable and humming along nicely.\n\nLess frequently than that is risky, though it doesn't _feel_ like a risk, often.\n\n## Trade feedback\n\n> So... got any awkward feedback for me, since last time?  \n> It's okay if I maybe can't actually fix it, or it's minor; at least then I'll know.\n> If we talk about it while it's minor, we might save ourselves from it getting worse....\n\nAnd don't forget positive feedback!\n\nIt's hugely useful to wrap up 1-on-1s once a month or so by taking notes together on what they've learned & accomplished with the team; collect the stats & make it really clear what the benefit was.\n\n## What about evaluation?\n\nIf part of your job is judging their performance, how do you do that?\n\n**When** do you do it?\n\nYou have to do it, at least a little bit, before every 1 on 1, because it's so much easier to work with someone on a problem when it's hardly caused any trouble yet.\n\nIf you don't notice it for months... you might cost someone their job and/or a lot of pain.\n"
+      }
+    ]
+  },
+  {
     "title": "Everything is fine (really)",
-    "slug": "everything-is-fine",
+    "slug": "fine-really",
     "topics": [
       {
         "name": "So! This is a topic's title",
-        "path": "/everything-is-fine/sample-topic-a",
+        "path": "/fine-really/sample-topic-a",
         "md": "One paragraph might go here; with some text blah blah blah\n\nAnother paragraph\n\n## Let's talk about h2s\n\nWe could indeed. Let's put a quote here:\n\n> Multiline quote, even!  \n> Though only if we put two spaces  \n> at the end of each line...\n\n## And one more h2?\n\nGreat.\n\n- Here's an\n- unordered\n- list with a [link in it](https://robwhelan.com 'Link to, uh.')\n\n## What about images?\n\nThese will take more work to style well, I guess, but let's see...\n\n![Image alt text](logo512.png 'Image title text')\n\n_Nice?_ **Nice.**\n\n1. I guess\n1. we can also do\n1. an ordered list\n\nAt vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.\n"
       }
     ]
   },
   {
-    "title": "Problems I don't know how to talk about",
-    "slug": "problems-i-dont-know-how",
+    "title": "This is fine (on fire)",
+    "slug": "fine-on-fire",
+    "topics": [
+      {
+        "name": "We are all burning out!",
+        "path": "/fine-on-fire/all-burning-out",
+        "md": "Everyone is working way too many hours, because we worry the company won't survive if we don't deliver.\n\nMaybe... we **did** deliver, sort of, and since then we've been battling on but half-drowning in the bugs, the performance issues, the instability.\n\nA blame-focused work culture, poor communication and wasted work or resources all make it worse.\n\n## What's going to happen?\n\nSome devs will leave on their own (often: the highly-skilled & extroverted; they have friends asking them why they're putting up with a death march).\n\nOthers will stay, in spite of the damage it's doing, because they fear failure or \"giving up\", they don't want to abandon the team, they think there will one day be rewards to match the pain and effort; or other reasons.\n\nBut overwork sabotages mental & physical health. Personal life & relationships suffer. People's careers can stall completely, or if they're still learning, it's by grueling trial & error with little time to reflect... the slowest way.\nt some point, the damage will overwhelm their ability to work at all, and recovery may take months or years.\n\n## How do we talk about it?\n\n1. Define a practical healthy working environment as a reference (mental well-being, flexibility, high-quality work & collaboration, carefully-managed complexity & technical debt), and highlight what we _do_ have vs. where we're currently falling short.\n1. Get updates: how often working into the night, how often upset about work, how often work demands are clashing with life outside of work. **We don't need details**, especially if trust is low! Just a sense of e.g. how this week compares to last week, and if there are particular things happening that make it worse.\n1. Talk about and get input on long-term fixes. How aware is leadership of what's happening? Share what you've said & heard.\n\n> We have a lot to fix, long-term, but... what's a little change that would make your life just a bit better that we can try right now?  \n> Even freeing you from 10 minutes of annoyance gives you 10 minutes to think clearly about the real fixes...  \n> Okay, to be really concrete - I'll do X, you do Y; and we'll check back on the 20th to see how much of a difference it made.\n"
+      }
+    ]
+  },
+  {
+    "title": "Something has to change",
+    "slug": "something-has-to-change",
     "topics": [
       {
         "name": "So! This is a topic's title",
-        "path": "/problems-i-dont-know-how/sample-topic-1",
+        "path": "/something-has-to-change/sample-topic-1",
         "md": "One paragraph might go here; with some text blah blah blah\n\nAnother paragraph\n\n## Let's talk about h2s\n\nWe could indeed. Let's put a quote here:\n\n> Multiline quote, even  \n> Splendid, yes\n\n## And one more h2?\n\nGreat.\n\n- Here's an\n- unordered\n- list with a [link in it](https://robwhelan.com 'Link to, uh.')\n\n## What about images?\n\nThese will take more work to style well, I guess, but let's see...\n\n![Image alt text](logo512.png 'Image title text')\n\n_Nice?_ **Nice.**\n\n1. I guess\n1. we can also do\n1. an ordered list\n\nAt vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.\n"
       },
       {
         "name": "So! This is a topic's title",
-        "path": "/problems-i-dont-know-how/sample-topic-2",
+        "path": "/something-has-to-change/sample-topic-2",
         "md": "One paragraph might go here; with some text blah blah blah\n\nAnother paragraph\n\n## Let's talk about h2s\n\nWe could indeed. Let's put a quote here:\n\n> Multiline quote, even  \n> Splendid, yes\n\n## And one more h2?\n\nGreat.\n\n- Here's an\n- unordered\n- list with a [link in it](https://robwhelan.com 'Link to, uh.')\n\n## What about images?\n\nThese will take more work to style well, I guess, but let's see...\n\n![Image alt text](logo512.png 'Image title text')\n\n_Nice?_ **Nice.**\n\n1. I guess\n1. we can also do\n1. an ordered list\n\nAt vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.\n"
       }
     ]

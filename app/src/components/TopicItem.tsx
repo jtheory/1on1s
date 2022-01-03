@@ -2,7 +2,6 @@ import React, { CSSProperties } from 'react'
 import Markdown from 'markdown-to-jsx'
 import { Topic } from '../App'
 import { Link } from 'react-router-dom'
-// import './TopicItem.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPencilAlt } from '@fortawesome/free-solid-svg-icons'
 
@@ -29,17 +28,17 @@ const TopicItem: React.VFC<TopicItemProps> = (props) => {
   const topicStyle = isSelected ? TopicStyleSelected : TopicStyle
   const nameLink = isSelected ? '/' : props.data.path
   return (
-    <li style={topicStyle}>
-      <h2>
+    <article style={topicStyle}>
+      <h1>
         <Link to={nameLink}>{props.data.name}</Link>
-      </h2>
+      </h1>
       <div>
         <a href={`${editUrlBase}${props.data.path}.md`} aria-label="Edit: opens content page on github">
           <FontAwesomeIcon icon={faPencilAlt} />
         </a>
         <Markdown>{props.data.md}</Markdown>
       </div>
-    </li>
+    </article>
   )
 }
 
