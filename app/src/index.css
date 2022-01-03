@@ -19,7 +19,7 @@ blockquote {
   padding: 0.2rem 2rem;
   margin: 1.5rem auto;
   border-left: 0.4rem solid #ccc;
-  border-right: 2px solid #ccc;
+  border-right: 0.1rem solid #ccc;
 }
 
 blockquote:before,

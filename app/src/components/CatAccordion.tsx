@@ -11,7 +11,7 @@ interface CatAccordionProps {
 }
 
 const CatStyle: CSSProperties = {
-  maxHeight: '5rem', // show only the title
+  maxHeight: '4rem', // show only the title
   overflow: 'hidden',
   opacity: '0.5',
   transition: 'max-height 1s ease-in-out',
@@ -49,7 +49,7 @@ const CatAccordion: React.VFC<CatAccordionProps> = (props) => {
         return (
           <section key={cat.slug} style={catStyle}>
             <h1>
-              <Link to={'/'}>{cat.title}</Link>
+              <Link to={'/'} className='catLink'>{cat.title}</Link>
             </h1>
             <div>
               {cat.topics.map((topic) => (

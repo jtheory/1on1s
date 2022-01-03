@@ -5,6 +5,8 @@ import contentJson from './__generated__/content.json'
 import { BrowserRouter } from 'react-router-dom'
 import './App.css'
 import CatAccordion from './components/CatAccordion'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHandSparkles } from '@fortawesome/free-solid-svg-icons'
 
 export interface Topic {
   name: string
@@ -36,8 +38,10 @@ function App() {
         <h1>Tech 1-on-1 ideas &amp; scripts</h1>
         <p>Nearly time for that 1-on-1! Let's plan it out.</p>
       </header>
-      <div className='content'>
-        <p>Pick a category to explore:</p>
+      <div className="content">
+        <p>
+          Pick a category to explore <FontAwesomeIcon icon={faHandSparkles} style={{ color: '#aaf' }} />
+        </p>
         <BrowserRouter>
           <CatAccordion data={catsData} />
         </BrowserRouter>

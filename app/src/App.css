@@ -1,7 +1,7 @@
 .App {
   /* min-height: 100vh; */
   background-color: #f0f0f0;
-    /* display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; */
@@ -24,6 +24,7 @@
   padding: 3vmin 1rem;
   text-align: center;
   font-size: calc(10px + 2vmin);
+  box-shadow: 0.3rem 1rem 0.5rem rgba(192, 192, 192, 0.4);
 }
 
 .App header h1 {
@@ -32,7 +33,24 @@
 
 .App .content {
   background-color: #fff;
+  color: #111;
   padding: 1em 2em;
   max-width: 80rem;
   margin: 0 auto 1rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  box-shadow: 0.3rem 1rem 0.5rem rgba(192, 192, 192, 0.4);
+}
+
+.App .catLink {
+  display: block;
+  text-decoration: none;
+  background-color: #ccc;
+}
+.App .catLink:hover {
+  background-color: #aaf;
+}
+
+.App .topicLink {
+  display: block;
+  text-decoration: none;
 }
