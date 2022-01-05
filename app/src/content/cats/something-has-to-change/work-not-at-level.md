@@ -1,34 +1,61 @@
 # I'm worried your work isn't at the level we need
 
-One paragraph might go here; with some text blah blah blah
+This is a hard one. Who feels comfortable telling someone that they're not good enough?
 
-Another paragraph
+The important thing here is that this is **not** the judgement we have to make, anyway.
 
-## Let's talk about h2s
+This is not an evaluation of the person, their worth, and not even of their ability to be a developer, generally.
 
-We could indeed. Let's put a quote here:
+To be really clear, I can't even say "the work you're doing isn't enough", just that what I'm seeing doesn't match up with what I think the team needs.
 
-> Multiline quote, even  
-> Splendid, yes
+This sounds like it's splitting hairs, but it's important, because we're bad at guessing what other people are thinking.
 
-## And one more h2?
+So I need to be clear about:
 
-Great.
+1. What I'm seeing (and how I'm checking it)
+1. Concrete expectations for this role (this should be clear across the organization, not criteria I'm inventing)
+1. (...discussion & filling in context)
+1. Possible paths & next steps
 
-- Here's an
-- unordered
-- list with a [link in it](https://robwhelan.com 'Link to, uh.')
+## Some problems have nothing to do with work
 
-## What about images?
+Personal life struggles can overwhelm work in a way people may not even notice.
 
-These will take more work to style well, I guess, but let's see...
+> How stable is your life outside of work, right now?  
+> The details are none of my business, but if things are rough right now, we can coordinate to try to keep work really stable.
 
-![Image alt text](logo512.png 'Image title text')
+## A good team and good developer can still be a poor match
 
-_Nice?_ **Nice.**
+Maybe their work is great but their communication style keeps upsetting the rest of the team.
 
-1. I guess
-1. we can also do
-1. an ordered list
+Maybe they are incredibly detail-oriented & want everything just right, and the team needs to crank out many experiments, fast (and throw most of them away). Or vice versa.
 
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+Maybe the product complexity has grown to a level where they're struggling to work safely.
+
+These are all cases where there are many paths:
+
+- You may want to improve these skills
+- You can maybe change focus (or change teams) to work the way you prefer
+- The product itself may need arch refactoring and clean-up before more & more devs are forced to drop out
+- Or maybe it's time to start looking for roles elsewhere; and we can plan this out
+
+## Bring context & options, not threats or demands
+
+If the conversations feels like a power or dominance struggle, that triggers all kind of instincts that will not help.
+
+A manager's job is not to tell team members what to do or keep them in line.
+
+It's to support them so that, with the team, they can succeed & build good things.
+
+If I see a problem, I share the context we see with them, they share their side, and then we collaborate to make sure things get better.
+
+If I suggest one solution, but they say "no, I really want to just do it this way, and we'll get the result we need", that's fine.
+
+They know themselves better than I do. I just need to confirm how we'll confirm.
+
+## Don't forget to leave space to think
+
+It's highly stressful when work isn't going well. Many people don't give their best replies immediately in a worrying conversation.
+
+> Think about it, both the options we talked about and what I can do to help.  
+> If you have other ideas or suggestions, let me know! We'll make a concrete plan on Friday.

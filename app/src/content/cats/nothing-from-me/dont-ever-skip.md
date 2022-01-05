@@ -9,7 +9,7 @@ Less frequently than that is risky, though it doesn't _feel_ like a risk, often.
 ## Trade feedback
 
 > So... got any awkward feedback for me, since last time?  
-> It's okay if I maybe can't actually fix it, or it's minor; at least then I'll know.
+> It's okay if I maybe can't actually fix it, or it's minor; at least then I'll know.  
 > If we talk about it while it's minor, we might save ourselves from it getting worse....
 
 And don't forget positive feedback!
@@ -22,6 +22,6 @@ If part of your job is judging their performance, how do you do that?
 
 **When** do you do it?
 
-You have to do it, at least a little bit, before every 1 on 1, because it's so much easier to work with someone on a problem when it's hardly caused any trouble yet.
+You have to do it, at least a little bit, before every 1 on 1, because it's so much easier to work with someone on a problem when it's little and you have time.
 
 If you don't notice it for months... you might cost someone their job and/or a lot of pain.
