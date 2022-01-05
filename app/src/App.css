@@ -5,6 +5,7 @@
 }
 
 /* @media (prefers-reduced-motion: no-preference) {
+  TODO: disable animation if user prefers reduced motion
   .App-logo {
     animation: App-logo-spin infinite 2s ease-in-out alternate-reverse;
   }
@@ -19,7 +20,7 @@
   min-height: 12vmin;
   padding: 3vmin 1rem;
   text-align: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 3vmin;
   box-shadow: 0.3rem 1rem 0.5rem rgba(192, 192, 192, 0.4);
 }
 
@@ -30,7 +31,7 @@
 .App .content {
   background-color: #fff;
   color: #111;
-  padding: 1em 2em;
+  padding: 1rem;
   max-width: 80rem;
   margin: 0 auto 1rem;
   border-radius: 0 0 0.5rem 0.5rem;
@@ -40,8 +41,11 @@
 .App .catTitle {
   display: block;
   text-decoration: none;
-  background-color: #ccc;
-  color: #fff;
+  border-top: 1px solid #aaa;
+  border-bottom: 2px solid #aaa;
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.4rem;
+  font-size: 1.5rem;
 }
 
 .App .topicLink {
@@ -49,6 +53,10 @@
   text-decoration: none;
   background-color: #fff;
   color: #116;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 .App .topicLink:visited {
   background-color: #fff;
@@ -68,4 +76,41 @@
   flex-direction: row;
   align-items: flex-start;
   gap: 0.5rem;
+}
+
+.App article h1, .App article h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.2rem 0rem;
+}
+
+/* content styles... not bothering to namespace at this point */
+
+blockquote {
+  position: relative;
+  padding: 0.2rem 2rem;
+  margin: 0;
+  border-left: 0.4rem solid #ccc;
+  border-right: 0.1rem solid #ccc;
+  max-width: fit-content;
+}
+
+blockquote:before,
+blockquote:after {
+  position: absolute;
+  font-size: 4rem;
+  font-family: 'Times';
+  color: gray;
+}
+blockquote:before {
+  content: '“';
+  margin-left: -0.5em;
+  margin-top: -0.4em;
+}
+blockquote:after {
+  content: '”';
+  bottom: 0;
+  right: 0;
+  margin-right: 0.02em;
+  margin-bottom: -0.75em;
 }

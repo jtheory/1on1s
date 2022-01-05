@@ -28,9 +28,9 @@ const DrawerOpenStyle = {
 }
 
 const TopicItem: React.VFC<TopicItemProps> = (props) => {
-  // TODO: eh. more movement, plus this doesn't (yet) happen on a fresh page load
+  // TODO: eh. more movement, plus this isn't (yet) triggered by a fresh page load
   const titleRef = useRef<HTMLHeadingElement>(null)
-  const scrollToTitle = () => titleRef?.current?.scrollIntoView({ behavior: 'smooth' })
+  const scrollToTitle = () => {} //titleRef?.current?.scrollIntoView({ behavior: 'smooth' })
 
   const isSelected = props.data.path === props.selectedPath
   const drawerStyle = isSelected ? DrawerOpenStyle : DrawerClosedStyle

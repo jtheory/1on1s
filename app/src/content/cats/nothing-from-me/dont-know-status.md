@@ -6,4 +6,6 @@ They **are** a fine time for us to brainstorm on how to improve our process, tho
 
 Let's talk about the goals of sharing status, and then figure out the most comfortable way to do that, for you & me in particular.
 
-It's extra work to track & report on _anything_, so we should be really clear on who's using what info, and how.
+Lots of our work naturally involves writing things down; that helps. More time (and focus) spent on extra documentation just for other to track status is usually tedious.
+
+So: we'll be really clear on who's using that info (and what they really need) so we never do unneeded tedious work.

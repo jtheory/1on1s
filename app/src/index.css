@@ -1,4 +1,4 @@
-/* @import-normalize; bring in normalize.css styles */
+@import-normalize; /* tell CRA to mix in normalize.css */
 
 html {
   margin: 0;
@@ -12,33 +12,4 @@ html {
 
 body {
   margin: 0;
-}
-
-blockquote {
-  position: relative;
-  padding: 0.2rem 3rem;
-  margin: 0;
-  border-left: 0.4rem solid #ccc;
-  border-right: 0.1rem solid #ccc;
-  max-width: fit-content;
-}
-
-blockquote:before,
-blockquote:after {
-  position: absolute;
-  font-size: 4rem;
-  font-family: 'Times';
-  color: gray;
-}
-blockquote:before {
-  content: '“';
-  margin-left: -0.6em;
-  margin-top: -0.3em;
-}
-blockquote:after {
-  content: '”';
-  bottom: 0;
-  right: 0;
-  margin-right: 0.1em;
-  margin-bottom: -0.7em;
 }
