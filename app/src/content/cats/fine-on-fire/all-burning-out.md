@@ -21,6 +21,7 @@ t some point, the damage will overwhelm their ability to work at all, and recove
 1. Get updates: how often working into the night, how often upset about work, how often work demands are clashing with life outside of work. **We don't need details**, especially if trust is low! Just a sense of e.g. how this week compares to last week, and if there are particular things happening that make it worse.
 1. Talk about and get input on long-term fixes. How aware is leadership of what's happening? Share what you've said & heard.
 
-> We have a lot to fix, long-term, but... what's a little change that would make your life just a bit better that we can try right now?  
-> Even freeing you from 10 minutes of annoyance gives you 10 minutes to think clearly about the real fixes...  
-> Okay, to be really concrete - I'll do X, you do Y; and we'll check back on the 20th to see how much of a difference it made.
+> We have a lot to fix, long-term, but... what _small_ change would make your life just a little bit better, that we can try right now?  
+> Even freeing you from 10 minutes of annoyance gives you 10 minutes to think clearly about larger strategy...
+>
+> Let's assign tasks - I'll do X, you do Y; and we'll review results on the 20th.

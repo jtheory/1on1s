@@ -1,10 +1,6 @@
 .App {
-  /* min-height: 100vh; */
+  min-height: 100vh;
   background-color: #f0f0f0;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
   padding: 0 0 1rem;
 }
 
@@ -41,16 +37,35 @@
   box-shadow: 0.3rem 1rem 0.5rem rgba(192, 192, 192, 0.4);
 }
 
-.App .catLink {
+.App .catTitle {
   display: block;
   text-decoration: none;
   background-color: #ccc;
-}
-.App .catLink:hover {
-  background-color: #aaf;
+  color: #fff;
 }
 
 .App .topicLink {
   display: block;
   text-decoration: none;
+  background-color: #fff;
+  color: #116;
+}
+.App .topicLink:visited {
+  background-color: #fff;
+  color: #111;
+}
+.App .topicLink:hover {
+  background-color: #aaf;
+  color: #33f;
+}
+.App .topicLink:active {
+  background-color: #116;
+  color: #fff;
+}
+
+.App article .drawer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.5rem;
 }
