@@ -13,7 +13,8 @@ Some devs will leave on their own (often: the highly-skilled & extroverted; they
 Others will stay, in spite of the damage it's doing, because they fear failure or "giving up", they don't want to abandon the team, they think there will one day be rewards to match the pain and effort; or other reasons.
 
 But overwork sabotages mental & physical health. Personal life & relationships suffer. People's careers can stall completely, or if they're still learning, it's by grueling trial & error with little time to reflect... the slowest way.
-t some point, the damage will overwhelm their ability to work at all, and recovery may take months or years.
+
+At some point, the damage will overwhelm their ability to work at all, and recovery may take months or years.
 
 ## How do we talk about it?
 

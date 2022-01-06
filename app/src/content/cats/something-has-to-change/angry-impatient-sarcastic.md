@@ -1,34 +1,41 @@
 # Angry, impatient, sarcastic, pessimistic, condescending...
 
-One paragraph might go here; with some text blah blah blah
+What do we do when a team member is too negative, and it's affecting the team?
 
-Another paragraph
+First, anything sexist, racist, etc.; or sex-related comments are a problem. Even as jokes; even if everyone laughs. It's never 100% clear who's cringing silently.
 
-## Let's talk about h2s
+But in less clear situations, we can talk to people & check for real impact; there's a lot of cultural variance, and friendly insults (among actual friends) or exaggerated pessimism may not actually be a problem.
 
-We could indeed. Let's put a quote here:
+This is partly a question of team composition, and what personalities mesh well.
 
-> Multiline quote, even  
-> Splendid, yes
+## Psychological safety
 
-## And one more h2?
+Any comments that undercut psychological safety & engagement are a problem.
 
-Great.
+(Reference to psychological safety & effective teams; Google)
 
-- Here's an
-- unordered
-- list with a [link in it](https://robwhelan.com 'Link to, uh.')
+"Have a thick skin" is not a requirement for a developer role.
 
-## What about images?
+"Can accept any critique, even if it's worded badly" is valuable, but also not required (and not always possible).
 
-These will take more work to style well, I guess, but let's see...
+We **do** all need the skills to:
 
-![Image alt text](logo512.png 'Image title text')
+- Avoid escalating disagreements into personal attacks
+- Value & work on holding our team to a high standard without attacking & upsetting each other
 
-_Nice?_ **Nice.**
+Human mistakes are inevitable, and it's not helpful to just ... try harder to be perfect, because you're frightened of public shaming.
 
-1. I guess
-1. we can also do
-1. an ordered list
+Instead, we want to keep evolving our systems & processes to make them robust:
 
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+- Map out work before starting and highlight risks (and get diverse input)
+- Design good tests & observability in CI, CD and live code
+- Keep complexity low and all APIs clean. Flag & refactor unstable areas.
+
+## How to talk about it
+
+> I'll tell you what I'm seeing, and you let me know your point of view.  
+>  
+> I think your motivation for pushing here is good; you want us to write good code.  
+> So what I want to talk about is how we can get that result, but minimize upsetting people along the way.
+
+(More ideas to come)
