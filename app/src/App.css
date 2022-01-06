@@ -14,10 +14,14 @@
 .App header {
   background-color: #282c34; /* fallback */
   background-repeat: no-repeat;
-  background-image: radial-gradient(50% 50% at top center, rgba(0, 200, 255, 0.5), #222);
-  background-size: 120% 2000px;
+  /* background-image: radial-gradient(50% 50% at top center, rgba(0, 200, 255, 0.5), #222);
+  background-size: 120% 2000px; */
+  background-image: url('road.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
   color: #f0f0f0;
-  min-height: 12vmin;
+  min-height: 20vmin;
   padding: 3vmin 1rem;
   text-align: center;
   font-size: 3vmin;
@@ -78,7 +82,8 @@
   gap: 0.5rem;
 }
 
-.App article h1, .App article h2 {
+.App article h1,
+.App article h2 {
   font-size: 1.1rem;
   font-weight: 600;
   margin: 0.2rem 0rem;
