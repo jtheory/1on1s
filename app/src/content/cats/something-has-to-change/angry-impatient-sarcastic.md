@@ -38,4 +38,10 @@ Instead, we want to keep evolving our systems & processes to make them robust:
 > I think your motivation for pushing here is good; you want us to write good code.  
 > So what I want to talk about is how we can get that result, but minimize upsetting people along the way.
 
-(More ideas to come)
+Sometimes they simply disagree with the best way to motivate people & keep work quality high!
+
+That's fine; still many paths open:
+
+- Let's set the bar for quality together; we can agree on this, and then if the "kinder" paths aren't working, you'll have a stronger argument
+- I have studies, articles & books to suggest
+- It's also possible you'll just be happier in a different company's culture; if that's true, then just follow our rules while you're here, and I can definitely help you out finding a new role elsewhere
