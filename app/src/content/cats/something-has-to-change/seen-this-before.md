@@ -20,6 +20,18 @@ Log what we actually know, and focus on bad results, not just questionable decis
 >
 > There's a problem here with our tests not protecting us; that's first. We all code bugs sometimes.
 >
-> Fixing it was good; and the statement on standup didn't cause any new problems **except** that if we're not clear with each other it will waste time & erode trust.
+> Fixing it was good; and the statement on standup didn't cause any new problems **except** that if we're not clear with each other, it wastes time & erodes trust.
 >
 > ...and there's some reason X felt unsafe admitting what had happened. I'll find out.
+
+Maybe the person who started stealing from the company 2 years ago seemed similar...
+
+That's fine, this is a good reason to pay close attention, and collaborate well to restore trust (or uncover real, deeper problems & address them).
+
+> It's urgent to fix this quickly, because we had an absolute disaster with someone 2 years ago...  
+>  
+> So this particular thing is not a big deal; but it can make people panic, and we don't want that.  
+>  
+> Let's work through this case together really well, and let me know in private if you feel like a similar situation is coming up, and I'll help.  
+>  
+> It might help to do more pair work, because then you have two people involved when something goes wrong, plus a better chance of catching it early.

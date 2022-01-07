@@ -31,13 +31,20 @@ const AboutPane: React.VFC<AboutPaneProps> = (props) => {
   return (
     <div>
       <h1>
-        What's this all about
+        Hello; what's this?
         {/* <Link to={nameLink} onClick={scrollToTitle} className="topicLink">
           <FontAwesomeIcon icon={faComments} /> {props.data.name}
         </Link> */}
       </h1>
       <div className="drawer" style={drawerStyle}>
         <p>Some content here.</p>
+        <ul>
+          <li>What is this - audience (both mgr/lead + ICs)</li>
+          <li>who am I, what I do</li>
+          <li>contact info</li>
+          <li>contributing + improving / comments / typos</li>
+          <li>photo credit?</li>
+        </ul>
       </div>
     </div>
   )

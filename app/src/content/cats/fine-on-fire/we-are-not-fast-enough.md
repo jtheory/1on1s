@@ -4,9 +4,9 @@ This is a crucial topic when the team is struggling and deadlines are looming.
 
 There are so many bad paths to take, and some of them will do serious damage to team members, the company as a whole, or (probably) both.
 
-Less experienced devs still have awful habits left over from school; _burn everything_ and fall over the finish line, then crash. Or they may believe think bosses will only assign them reasonable tasks, so either they _must_ succeed to prove themselves, or they will fail out of adult life.
+Less experienced devs still have awful habits left over from school; _burn everything_ and fall over the finish line, then crash. Or they may think bosses will only assign them reasonable tasks, so either they _must_ succeed to prove themselves, or they will fail out of adult life.
 
-Others will just check out. "There's no way we'll make this deadline... typical. I'm going to just do the minimum to keep my job, and ignore whatever the bosses feel like shouting about today; there's no point."
+Others will just check out. "There's no way we'll make this deadline... typical. I'm going to just do the minimum, and ignore whatever the bosses feel like shouting about today; there's no point."
 
 ## What's a healthier mental model?
 

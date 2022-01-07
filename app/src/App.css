@@ -14,17 +14,14 @@
 .App header {
   background-color: #282c34; /* fallback */
   background-repeat: no-repeat;
-  /* background-image: radial-gradient(50% 50% at top center, rgba(0, 200, 255, 0.5), #222);
-  background-size: 120% 2000px; */
   background-image: url('road.jpg');
-  background-position: center;
-  background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
   color: #f0f0f0;
-  min-height: 20vmin;
-  padding: 3vmin 1rem;
+  min-height: calc(30vmin + 5rem);
+  padding: 4vmin 1rem 1vmin;
   text-align: center;
-  font-size: 3vmin;
+  font-size: calc(2vmin + 0.5rem);
   box-shadow: 0.3rem 1rem 0.5rem rgba(192, 192, 192, 0.4);
 }
 
@@ -40,6 +37,7 @@
   margin: 0 auto 1rem;
   border-radius: 0 0 0.5rem 0.5rem;
   box-shadow: 0.3rem 1rem 0.5rem rgba(192, 192, 192, 0.4);
+  font-size: calc(0.5vmin + 0.7rem);
 }
 
 .App .catTitle {
@@ -49,7 +47,7 @@
   border-bottom: 2px solid #aaa;
   border-radius: 0.5rem;
   padding: 0.1rem 0.4rem;
-  font-size: 1.5rem;
+  font-size: calc(0.5vmin + 1rem);
 }
 
 .App .topicLink {
@@ -59,7 +57,7 @@
   color: #116;
   padding: 0.5rem 0.5rem;
   border-radius: 0.3rem;
-  font-size: 1.3rem;
+  font-size: calc(0.5vmin + 0.8rem);
   font-weight: 500;
 }
 .App .topicLink:visited {
@@ -84,7 +82,7 @@
 
 .App article h1,
 .App article h2 {
-  font-size: 1.1rem;
+  font-size: calc(1vmin + 0.7rem);
   font-weight: 600;
   margin: 0.2rem 0rem;
 }
