@@ -20,15 +20,6 @@ export interface Cat {
   topics: Topic[]
 }
 
-// const AppStyle: CSSProperties = {
-//   minHeight: '100%',
-//   backgroundRepeat: 'no-repeat',
-//   backgroundPosition: 'center',
-//   backgroundAttachment: 'fixed',
-//   backgroundSize: 'cover',
-//   backgroundImage: `url(${forest})`,
-// }
-
 const catsData = contentJson as Cat[]
 
 function App() {

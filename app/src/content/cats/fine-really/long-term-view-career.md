@@ -2,12 +2,12 @@
 
 Do we have a documented career ladder for the org?
 
-If not, we can reference shared ones, like https://career-ladders.dev, as part of finding out what skills you most want to develop, and how to do that.
+If not, let's talk about shared ones, like [progression.fyi](https://www.progression.fyi) or [career-ladders.dev](https://career-ladders.dev), as part of finding out what skills you want to develop, and how.
 
 Everyone has different strengths; we want to make sure baseline skills (especially around working effectively with the team & company) are solid, but also make sure you're getting to do things that grow your strengths and what you like best.
 
-> Are any of these things intimidating, and we can make some safe experiments in that direction so they're more familiar?  
->  
+> Are any of these things intimidating, and we can make some safe experiments in that direction so they're more familiar?
+>
 > In a given week, what are the moments you most enjoy & feel like you're really in the zone? What are the hardest moments, or where you feel lost or unsure?
 
 ## I want to do things we aren't doing here...

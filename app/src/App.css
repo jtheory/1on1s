@@ -1,28 +1,57 @@
+/* color vars based on browser scheme */
+:root {
+  --body-bg: #f0f0f0;
+  --layout-shadow: rgba(192, 192, 192, 0.4);
+  --header-bg: #282c34;
+  --header-color: #f0f0f0;
+  --header-shadow: #222;
+  --content-bg: #fff;
+  --content-color: #111;
+  --topic-link-color: #376;
+  --topic-link-vis-color: #111;
+  --topic-link-hov-bg: #7c7;
+  --topic-link-hov-color: #fff;
+  --topic-link-act-bg: #165;
+  --topic-link-act-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg: #000;
+    --layout-shadow: rgba(192, 192, 192, 0.1);
+    --header-bg: #282c34;
+    --header-color: #f0f0f0;
+    --header-shadow: #222;
+    --content-bg: #222;
+    --content-color: #eee;
+    --topic-link-color: #8cb;
+    --topic-link-vis-color: #eee;
+    --topic-link-hov-bg: #7c7;
+    --topic-link-hov-color: #fff;
+    --topic-link-act-bg: #165;
+    --topic-link-act-color: #fff;
+  }
+}
+
 .App {
   min-height: 100vh;
-  background-color: #f0f0f0;
+  background-color: var(--body-bg);
   padding: 0 0 1rem;
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
-  TODO: disable animation if user prefers reduced motion
-  .App-logo {
-    animation: App-logo-spin infinite 2s ease-in-out alternate-reverse;
-  }
-} */
-
 .App header {
-  background-color: #282c34; /* fallback */
+  background-color: var(--header-bg); /* fallback */
   background-repeat: no-repeat;
   background-image: url('road.jpg');
   background-position: center center;
   background-size: cover;
-  color: #f0f0f0;
+  color: var(--header-color);
+  text-shadow: 1px 1px 2px var(--header-shadow);
   min-height: calc(30vmin + 5rem);
   padding: 4vmin 1rem 1vmin;
+  box-shadow: 0.3rem 1rem 0.5rem var(--layout-shadow);
   text-align: center;
   font-size: calc(2vmin + 0.5rem);
-  box-shadow: 0.3rem 1rem 0.5rem rgba(192, 192, 192, 0.4);
 }
 
 .App header h1 {
@@ -30,13 +59,13 @@
 }
 
 .App .content {
-  background-color: #fff;
-  color: #111;
+  background-color: var(--content-bg);
+  color: var(--content-color);
   padding: 1rem;
   max-width: 80rem;
   margin: 0 auto 1rem;
   border-radius: 0 0 0.5rem 0.5rem;
-  box-shadow: 0.3rem 1rem 0.5rem rgba(192, 192, 192, 0.4);
+  box-shadow: 0.3rem 1rem 0.5rem var(--layout-shadow);
   font-size: calc(0.5vmin + 0.7rem);
 }
 
@@ -53,25 +82,25 @@
 .App .topicLink {
   display: block;
   text-decoration: none;
-  background-color: #fff;
-  color: #154;
+  color: var(--topic-link-color);
   padding: 0.5rem 0.5rem;
   border-radius: 0.3rem;
   font-size: calc(0.5vmin + 0.8rem);
-  font-weight: 550;   
+  font-weight: 550;
 }
 .App .topicLink:visited {
-  background-color: #fff;
-  color: #111;
+  color: var(--topic-link-vis-color);
 }
 .App .topicLink:hover {
-  background-color: #7c7;
-  color: #fff;
+  background-color: var(--topic-link-hov-bg);
+  color: var(--topic-link-hov-color);
 }
 .App .topicLink:active {
-  background-color: #165;
-  color: #fff;
+  background-color: var(--topic-link-act-bg);
+  color: var(--topic-link-act-color);
 }
+
+/* drawer inactive | active */
 
 .App article .drawer {
   display: flex;
@@ -80,9 +109,22 @@
   gap: 0.5rem;
 }
 
+.App article.inactiveTopic .drawer {
+  max-height: 0; /* default closed */
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-in-out; /* cubic-bezier(0, 0.8, 0.5, 1) */
+}
+
+.App article.activeTopic .drawer {
+  opacity: 1;
+  max-height: 500rem; /* TODO: too big = animation delay. too small = risk of cropping open content */
+  transition: max-height 0.5s ease-in, opacity 0.5s ease-in-out; /* cubic-bezier(0.5, 0.8, 1, 0) */
+}
+
 .App article h1,
 .App article h2 {
-  font-size: calc(1vmin + 0.7rem);
+  font-size: calc(0.5vmin + 0.8rem);
   font-weight: 600;
   margin: 0.2rem 0rem;
 }
@@ -116,4 +158,42 @@ blockquote:after {
   right: 0;
   margin-right: 0.02em;
   margin-bottom: -0.75em;
+}
+
+/* Respect pref for no moving animations */
+@media (prefers-reduced-motion: reduce) {
+  .App article.inactiveTopic .drawer {
+    transition: none;
+  }
+  .App article.activeTopic .drawer {
+    transition: none;
+  }
+}
+
+/*
+print
+- tidy up header
+- hide inactive cats and inactive topics in active cats (show selected topic only)
+- show all topics in ready cat (print ALL topics if no topic is open)
+*/
+@media print {
+  .App header {
+    text-shadow: none;
+    min-height: 0;
+    padding: 1rem 1rem;
+    box-shadow: none;
+  }
+  .App .content {
+    box-shadow: none;
+  }
+
+  .App .inactiveCat,
+  .App .activeCat article.inactiveTopic {
+    display: none;
+  }
+  .App .readyCat article .drawer {
+    opacity: 1;
+    overflow: unset;
+    max-height: unset;
+  }
 }

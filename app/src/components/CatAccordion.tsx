@@ -29,9 +29,12 @@ const CatAccordion: React.VFC<CatAccordionProps> = (props) => {
   return (
     <div className="CatAccordion">
       {props.data.map((cat) => {
-        // const isCatActive = selectedPath === '/' || selectedPath.startsWith(`/${cat.slug}/`)
+        let catClass = 'inactiveCat'
+        if (selectedPath === '/' || selectedPath === `/${cat.slug}`) catClass = 'readyCat'
+        if (selectedPath.startsWith(`/${cat.slug}/`)) catClass = 'activeCat'
+
         return (
-          <section key={cat.slug}>
+          <section key={cat.slug} className={catClass}>
             <h1 className="catTitle">{cat.title}</h1>
             <div>
               {cat.topics.map((topic) => (
