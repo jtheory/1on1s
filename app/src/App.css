@@ -13,6 +13,8 @@
   --topic-link-hov-color: #fff;
   --topic-link-act-bg: #165;
   --topic-link-act-color: #fff;
+  --link-color: #00b;
+  --link-vis-color: #90b;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,6 +32,8 @@
     --topic-link-hov-color: #fff;
     --topic-link-act-bg: #165;
     --topic-link-act-color: #fff;
+    --link-color: #88f;
+    --link-vis-color: #f6f;
   }
 }
 
@@ -130,6 +134,13 @@
 }
 
 /* content styles... not bothering to namespace at this point */
+
+a {
+  color: var(--link-color)
+}
+a:visited {
+  color: var(--link-vis-color)
+}
 
 blockquote {
   position: relative;
