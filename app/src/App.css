@@ -7,6 +7,7 @@
   --header-shadow: #222;
   --content-bg: #fff;
   --content-color: #111;
+  --about-bg: #eee;
   --topic-link-color: #376;
   --topic-link-vis-color: #111;
   --topic-link-hov-bg: #7c7;
@@ -26,14 +27,15 @@
     --header-shadow: #222;
     --content-bg: #222;
     --content-color: #eee;
-    --topic-link-color: #8cb;
+    --about-bg: #333;
+    --topic-link-color: #afb;
     --topic-link-vis-color: #eee;
     --topic-link-hov-bg: #7c7;
     --topic-link-hov-color: #fff;
     --topic-link-act-bg: #165;
     --topic-link-act-color: #fff;
     --link-color: #88f;
-    --link-vis-color: #f6f;
+    --link-vis-color: #a6f;
   }
 }
 
@@ -60,6 +62,12 @@
 
 .App header h1 {
   margin: 0;
+}
+
+.App .about.drawer {
+  background-color: var(--about-bg);
+  padding: 0.1rem 1rem;
+  border-radius: 0.5rem;
 }
 
 .App .content {
@@ -104,7 +112,7 @@
   color: var(--topic-link-act-color);
 }
 
-/* drawer inactive | active */
+/* drawer open | closed */
 
 .App article .drawer {
   display: flex;
@@ -113,17 +121,19 @@
   gap: 0.5rem;
 }
 
-.App article.inactiveTopic .drawer {
+.drawer.closed {
   max-height: 0; /* default closed */
   opacity: 0;
+  visibility: hidden;
   overflow: hidden;
-  transition: max-height 0.5s ease-out, opacity 0.5s ease-in-out; /* cubic-bezier(0, 0.8, 0.5, 1) */
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-in-out, visibility 0s linear 1s; /* cubic-bezier(0, 0.8, 0.5, 1) */
 }
 
-.App article.activeTopic .drawer {
+.drawer.open {
   opacity: 1;
+  visibility: visible;
   max-height: 500rem; /* TODO: too big = animation delay. too small = risk of cropping open content */
-  transition: max-height 0.5s ease-in, opacity 0.5s ease-in-out; /* cubic-bezier(0.5, 0.8, 1, 0) */
+  transition: max-height 0.5s ease-in, opacity 0.5s ease-in-out, visibility 0s linear 0s; /* cubic-bezier(0.5, 0.8, 1, 0) */
 }
 
 .App article h1,
@@ -136,10 +146,10 @@
 /* content styles... not bothering to namespace at this point */
 
 a {
-  color: var(--link-color)
+  color: var(--link-color);
 }
 a:visited {
-  color: var(--link-vis-color)
+  color: var(--link-vis-color);
 }
 
 blockquote {

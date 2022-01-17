@@ -19,6 +19,7 @@ const TopicItem: React.VFC<TopicItemProps> = (props) => {
 
   const isSelected = props.data.path === props.selectedPath
   const topicClass = isSelected ? 'activeTopic' : 'inactiveTopic'
+  const drawerClass = isSelected ? 'drawer open' : 'drawer closed'
   const nameLink = isSelected ? '/' : props.data.path
   return (
     <article className={topicClass}>
@@ -27,7 +28,7 @@ const TopicItem: React.VFC<TopicItemProps> = (props) => {
           <FontAwesomeIcon icon={faComments} /> {props.data.name}
         </Link>
       </h1>
-      <div className="drawer">
+      <div className={drawerClass}>
         <p>
           <a href={`${editUrlBase}${props.data.path}.md`} title="Suggest edits on GitHub" aria-label="Edit link to GitHub">
             <FontAwesomeIcon icon={faPencilAlt} />
