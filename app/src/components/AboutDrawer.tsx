@@ -15,7 +15,7 @@ const AboutDrawer: React.VFC<AboutDrawerProps> = (props) => {
       </p>
       <p>
         Hi! I'm <a href="https://robwhelan.com">Rob</a>. I built this little site to share my scripts with other folks managing engineers.
-        There are many ways to do it; here's mine (and if you're feeling lost, this may help).
+        There are many ways to do it; here's mine, currently (and if you're feeling lost, this may help).
       </p>
       <p>
         <em>Contribute:</em> It's open source; <a href="https://github.com/jtheory/1on1s/issues">create an issue</a> to request a new topic,
