@@ -15,12 +15,14 @@ It also helps correct bad interpretations early (and no one is perfect at guessi
 
 Another angle:
 
-> We talk about lots of different things on some of these calls; basically I'm guessing about what'll be useful to you.
+> We talk about lots of different things; basically I'm guessing about what'll be useful to you.
 >
-> I'll definitely guess wrong sometimes, though.
+> I'll definitely guess wrongly sometimes, though.
 >
 > If I know about what times you're just thinking "I hope this wraps up soon, because I have stuff to do" then I'll absolutely shift the focus into better directions.
 
 ## And don't forget positive feedback!
 
-It's hugely useful to wrap up 1-on-1s once a month or so by taking notes together on what they've learned & accomplished with the team; collect the stats & make it really clear what the benefit was.
+It's hugely useful to wrap up 1-on-1s once a month or so by taking notes together on what they've accomplished & learned; collect the stats & make it really clear what the benefit was.
+
+Some progress is also team-wide, not just individual; also worth tracking.
