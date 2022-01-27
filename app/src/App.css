@@ -181,6 +181,12 @@ blockquote:after {
   margin-bottom: -0.75em;
 }
 
+#netlify-link {
+  margin: 0.5rem;
+  text-align: right;
+  opacity: 0.7;
+}
+
 /* Respect pref for no moving animations */
 @media (prefers-reduced-motion: reduce) {
   .App article.inactiveTopic .drawer {
@@ -209,11 +215,13 @@ print
   }
 
   .App .inactiveCat,
-  .App .activeCat article.inactiveTopic {
+  .App .activeCat article.inactiveTopic,
+  #netlify-link {
     display: none;
   }
   .App .readyCat article .drawer {
     opacity: 1;
+    visibility: visible;
     overflow: unset;
     max-height: unset;
   }

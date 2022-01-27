@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import contentJson from './__generated__/content.json'
 import { useLocation } from 'react-router-dom'
 import './App.css'
+import netlify from './netlify-callout-vertical-light.svg'
 import CatAccordion from './components/CatAccordion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSeedling } from '@fortawesome/free-solid-svg-icons'
@@ -47,6 +48,11 @@ function App() {
         </p>
         <AboutDrawer selectedPath={selectedPath} />
         <CatAccordion data={catsData} selectedPath={selectedPath} />
+        <div id="netlify-link">
+          <a href="https://www.netlify.com">
+            <img alt="Deploys by Netlify" src={netlify} />
+          </a>
+        </div>
       </div>
     </div>
   )
