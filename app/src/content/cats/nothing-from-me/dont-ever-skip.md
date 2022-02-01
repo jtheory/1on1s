@@ -10,10 +10,14 @@ But everyone thinks differently, and we can be taken by surprise that someone ha
 
 ## What about evaluation?
 
-If part of your job is judging their performance, how do you do that?
+If part of your job is judging their performance, how do you do that (specifically)?
 
 **When** do you do it?
 
-You have to do it, at least a little bit, before every 1-on-1, because it's so much easier to work with someone on a problem when it's minor and you have time.
+Think about it at least a little before every 1-on-1, because it's **so much** easier to work with a problem when it's minor and you have time.
 
-If you don't notice it for months, until it's a serious problem... you might cost someone their job and/or a lot of pain.
+If you don't notice it for months, until it's a serious problem and affecting many other people... you might cost someone their job and cause a lot of unnecessary pain.
+
+## And what about appreciation?
+
+Evaluation is about showing them where they are. If they're doing great, what specifically are they doing, and what's great about it?
