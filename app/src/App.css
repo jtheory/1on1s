@@ -49,15 +49,25 @@
   background-color: var(--header-bg); /* fallback */
   background-repeat: no-repeat;
   background-image: url('road.jpg');
-  background-position: center center;
-  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  min-height: calc(30vmin + 5rem);
   color: var(--header-color);
   text-shadow: 1px 1px 2px var(--header-shadow);
-  min-height: calc(30vmin + 5rem);
   padding: 4vmin 1rem 1vmin;
   box-shadow: 0.3rem 1rem 0.5rem var(--layout-shadow);
   text-align: center;
   font-size: calc(2vmin + 0.5rem);
+}
+
+/* road.jpg is 1440x561 */
+@media screen and (max-width: 1440px) {
+  .App header {
+    background-attachment: unset;
+    background-size: cover;
+  }
 }
 
 .App header h1 {
