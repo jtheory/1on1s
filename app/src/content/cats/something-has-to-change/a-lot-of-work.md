@@ -19,11 +19,11 @@ Often the energy cost is a much bigger problem.
 
 > Here's what I see happening; you can fill in pieces I'm missing.
 >
-> Someone mentions an technical choice but you see a problem. You exaggerate the downsides, though.
+> Someone mentions an technical choice but you see a problem. You give the downsides in a very strong way, though.
 >
 > Then when they try to rebalance this or seem defensive, you escalate; eventually I have to come running and defuse everything.
 >
-> Everyone is upset; you too, right? We've all lost half an hour, and defusing these things really burns me out... I have to drop everything and then try to unpick it all & redirect, then we end up having separate calls to calms everything down and somehow delicately make the original decision.
+> Everyone is upset; you too, right? We've all lost half an hour, and defusing these things really burns me out... I have to drop everything and then try to unpick it all & redirect, then we end up having separate calls to calm everything down and somehow delicately make the original decision.
 >
 > We need a path here that feels like normal collaboration, and doesn't need me to jump in.
 
