@@ -30,4 +30,4 @@ Plus, the fact that they **can** do something does not mean they should.
 
 ## More eyes make bugs shallow (including planning bugs)
 
-We all have blind spots, also. An experienced IC (and often less-experienced ICs) will often have valuable insight into anything we're trying to with the team & project; and we can likewise sometimes help them catch a gap in their own plans or priorities.
+We all have blind spots, also. An experienced IC (and often less-experienced ICs) will often have valuable insight into anything we're trying to do with the team & project; and we can likewise sometimes help them catch a gap in their own plans or priorities.
