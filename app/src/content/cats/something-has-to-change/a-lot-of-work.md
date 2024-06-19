@@ -25,7 +25,7 @@ Often the energy cost is a much bigger problem.
 >
 > Everyone is upset; you too, right? We've all lost half an hour, and defusing these things really burns me out... I have to drop everything and then try to unpick it all & redirect, then we end up having separate calls to calm everything down and somehow delicately make the original decision.
 >
-> We need a path here that feels like normal collaboration, and doesn't need me to jump in.
+> We need a path here that feels like normal collaboration, and doesn't force me to jump in.
 
 ## I expose the problem; you own the fix
 

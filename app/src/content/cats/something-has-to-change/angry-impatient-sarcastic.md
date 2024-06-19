@@ -12,7 +12,7 @@ This is partly a question of team composition, and what personalities mesh well.
 
 Any comments that undercut psychological safety & engagement are a problem.
 
-(Reference to psychological safety & effective teams; Google)
+(Reference to psychological safety & effective teams, and Google's research here)
 
 "Have a thick skin" is not a requirement for a developer role.
 
@@ -21,15 +21,16 @@ Any comments that undercut psychological safety & engagement are a problem.
 We **do** all need the skills to:
 
 - Avoid escalating disagreements into personal attacks
-- Value & work on holding our team to a high standard without attacking & upsetting each other
+- Value & work on holding our team to a high standard without attacking & undermining each other
 
-Human mistakes are inevitable, and it's not helpful to just ... try harder to be perfect, because you're frightened of public shaming.
+Human mistakes are inevitable, and it's not helpful to just **try harder** to be perfect because you're frightened of public shaming.
 
-Instead, we want to keep evolving our systems & processes to make them robust:
+Instead, we want to keep evolving our systems & processes to keep us steady:
 
 - Map out work before starting and highlight risks (and get diverse input)
 - Design good tests & observability in CI, CD and live code
 - Keep complexity low and all APIs clean. Flag & refactor unstable areas.
+- Review early & often -- a solo developer opening a large PR with changes one one has seen yet is an antipattern.
 
 ## How to talk about it
 
@@ -42,6 +43,6 @@ Sometimes they simply disagree with the best way to motivate people & keep work 
 
 That's fine; still many paths open:
 
-- Let's set the bar for quality together; we can agree on this, and then if the "kinder" paths aren't working, you'll have a stronger argument
-- I have studies, articles & books to suggest
-- It's also possible you'll just be happier in a different company's culture; if that's true, then just follow our rules while you're here, and I can definitely help you out finding a new role elsewhere
+- Let's set the bar for quality together; we can agree on this as a team, and then if the "kinder" paths aren't working, you'll have a stronger argument.
+- I have studies, articles & books to suggest.
+- It's also possible you'll just be happier in a different company's culture; if that's true, then just follow our rules while you're here, and I can definitely help you out finding a new role elsewhere.
