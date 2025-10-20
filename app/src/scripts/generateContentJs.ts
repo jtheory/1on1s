@@ -1,7 +1,11 @@
 import { readdirSync, readFileSync, writeFileSync } from 'fs'
-import { join } from 'path'
+import { dirname, join } from 'path'
+import { fileURLToPath } from 'url'
 import { Cat, Topic } from '../App'
 import catTitlesAndSlugs from '../content/cat-titles-and-slugs'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
 const catDir = '../content/cats'
 const targetFile = '../__generated__/content.json'

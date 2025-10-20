@@ -1,6 +1,7 @@
 {
   "name": "1on1s",
   "version": "0.1.0",
+  "type": "module",
   "description": "Ideas & scripts for tech 1-on-1s",
   "repository": "git@github.com:jtheory/1on1s.git",
   "author": "Rob Whelan <hello@robwhelan.com>",
@@ -27,22 +28,17 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@types/react-router-dom": "^5.3.3",
-    "react-scripts": "^5.0.1",
-    "ts-node": "^10.9.2"
+    "@vitejs/plugin-react": "^4.3.4",
+    "tsx": "^4.19.2",
+    "vite": "^6.0.7"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "generate": "ts-node ./src/scripts/generateContentJs.ts",
-    "build": "react-scripts build",
+    "dev": "vite",
+    "start": "vite",
+    "generate": "tsx ./src/scripts/generateContentJs.ts",
+    "build": "vite build",
     "generateAndBuild": "yarn generate && yarn build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "preview": "vite preview"
   },
   "browserslist": {
     "production": [
