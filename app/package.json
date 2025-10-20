@@ -8,9 +8,9 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "1.2.36",
-    "@fortawesome/free-solid-svg-icons": "5.15.4",
-    "@fortawesome/react-fontawesome": "0.1.16",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "markdown-to-jsx": "^7.7.16",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -23,14 +23,16 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.1.0",
     "@testing-library/user-event": "^14.5.2",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.126",
+    "@vitest/ui": "^2.1.8",
+    "jsdom": "^25.0.1",
+    "@types/node": "^22.10.2",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@types/react-router-dom": "^5.3.3",
     "@vitejs/plugin-react": "^4.3.4",
     "tsx": "^4.19.2",
-    "vite": "^6.0.7"
+    "vite": "^6.0.7",
+    "vitest": "^2.1.8"
   },
   "scripts": {
     "dev": "vite",
@@ -38,7 +40,8 @@
     "generate": "tsx ./src/scripts/generateContentJs.ts",
     "build": "vite build",
     "generateAndBuild": "yarn generate && yarn build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest"
   },
   "browserslist": {
     "production": [
